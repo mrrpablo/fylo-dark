@@ -1,0 +1,654 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(218, 28%, 13%);
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    height: 15vh;
+}
+
+.logo{
+    width: 130px;
+    height: auto;
+    cursor: pointer;
+}
+
+ul.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.navbar li{
+    list-style: none;
+    width: 100px;
+}
+
+ul.navbar a{
+    color: rgba(255, 255, 255, 0.479);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul.navbar a:hover,
+ul.navbar a:focus{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.section-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: hsl(217, 28%, 15%);
+    position: relative;
+    z-index: 1;
+}
+
+.intro-desc{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.intro-desc h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.intro-desc p{
+    width: 500px;
+    line-height: 1.6rem;
+    font-weight: 700;
+    margin: 0 auto 30px;
+}
+
+.illustration{
+    width: 470px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    width: 250px;
+    padding: 14px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus{
+    background: hsl(176, 68%, 64%);
+}
+
+.curvy-bg{
+    background: url(./images/bg-curvy-desktop.svg);
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: -210px;
+    z-index: -1;
+}
+
+.section-2{
+    width: 100%;
+    height: auto;
+    background: hsl(218, 28%, 13%);
+    position: relative;
+    top: -310px;
+    z-index: 1;
+}
+
+.services{
+    width: 70%;
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.service-wrapper{
+    margin: 30px 0;
+}
+
+.service-wrapper img{
+    width: 70px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.service-desc{
+    width: 400px;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.service-desc h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.prod{
+    width: 550px;
+    height: auto;
+}
+
+.section-3{
+    width: 85%;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section-3-desc{
+    width: 550px;
+}
+
+.section-3-desc h1{
+    font-size: 2rem;
+    width: 300px;
+    margin-bottom: 15px;
+
+}
+
+.section-3-desc p{
+    margin-bottom: 30px;
+}
+
+.arrow-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.arrow-wrapper::after{
+    content: "";
+    margin-left: -150px;
+    width: 28%;
+    padding-top: 20px;
+    border-bottom:  1px solid hsl(176, 68%, 64%);
+    margin-top: 10px;
+}
+
+.anchor a{
+    text-decoration: none;
+    color:hsl(176, 68%, 64%);
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+
+.arrow img{
+    margin-top: 5px;
+}
+
+.testimonial-section{
+    width: 80%;
+    min-height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.testimonial-section::after{
+    content: url(./images/bg-quotes.png);
+    position: absolute;
+    top: 135px;
+    left: -10px;
+}
+
+.testimonial-card{
+    width: 385px;
+    height: 200px;
+    background: hsl(219, 30%, 18%);
+    padding: 25px 15px;
+    box-shadow: 2px 2px 3px hsl(217, 28%, 15%);
+    z-index: 1;
+}
+
+.testimonial-desc{
+    width: 345px;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.profile-wrapper{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.profile{
+    width: 50px;
+    height: 50px;
+    background: url(./images/profile-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profile-desc span{
+    font-size: 14px;
+    color: #f3f3f3;
+}
+
+.profile-2{
+    background: url(./images/profile-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-3{
+    background: url(./images/profile-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sign-up-section{
+    width: 60%;
+    height: 35vh;
+    margin: auto;
+    background-color:  hsl(219, 30%, 18%);
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    top: 50px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+}
+
+.sign-up-desc{
+    margin-bottom: 15px;
+}
+
+form{
+    margin-top: 30px;
+}
+
+input[type="email"]{
+    width: 500px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    margin-right: 25px;
+}
+
+input[type="submit"]{
+    width: 200px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border-radius: 25px;
+}
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background: hsl(216, 53%, 9%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+footer .logo{
+    position: relative;
+    top: 100px;
+    left: 60px;
+}
+
+.footer-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location{
+    width: 350px;
+    display: flex;
+}
+
+.location img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.address img{
+    margin-right: 5px;
+}
+
+li{
+    list-style: none;
+    line-height: 2rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.fas{
+    margin-right: 15px;
+}
+
+.fab{
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+a.fab{
+    text-decoration: none;
+    color: #fff;
+}
+
+.fab:hover{
+    color: hsl(176, 68%, 64%);
+}
+
+.footer-bottom{
+    width: 100%;
+    height: 10vh;
+    background: hsl(219, 30%, 18%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px){
+    .services{
+        width: 350px;
+        margin: auto;
+    }
+
+    .testimonial-section{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .testimonial-section::after{
+        top: -20px;
+        left: 65px;
+    }
+
+    .testimonial-card{
+        margin-bottom: 25px;
+    }
+
+    .sign-up-desc{
+        width: 400px;
+        font-size: .8rem;
+    }
+
+    input[type="email"]{
+        width: 350px;
+        margin-bottom: 15px;
+        
+    }
+
+    input[type="submit"]{
+        width: 250px;
+        margin: auto;
+    }
+
+    footer .logo{
+        width: 100px;
+        
+    }
+
+    .footer-body{
+        font-size: .8rem;
+    }
+
+    .location{
+        width: 150px;
+    }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    nav{
+        width: 90%;
+    }
+
+    .logo{
+        width: 70px;
+        height: auto;
+    }
+
+    ul.navbar li{
+        width: 70px;
+        margin-right: 5px;
+    }
+
+    ul.navbar li:nth-child(2){
+        width: 50px;
+    }
+
+
+    ul.navbar li:nth-child(3){
+        width: 50px;
+    }
+
+    .section-1{
+        width: 370px;
+        margin: auto;
+    }
+
+    .illustration{
+        width: 350px;
+    }
+
+    .intro-desc{
+        width: 300px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .intro-desc h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .intro-desc p{
+        width: 310px;
+        line-height: 1.5rem;
+        margin-top: 2em;
+    }
+
+    .btn{
+        width: 200px;
+    }
+
+    .curvy-bg{
+        display: none;
+    }
+
+    
+
+    .services{
+        width: 85%;
+        margin: 250px auto 0;
+    }
+
+    .service-desc{
+        width: 300px;
+        margin: auto;
+    }
+
+    .service-desc h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    .service-desc p{
+        font-size: 14px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .section-3{
+        margin-top: 0;
+    }
+
+    .prod{
+        width: 300px;
+        height: auto;
+    }
+
+    .section-3-desc h1{
+        font-size: 1rem;
+        margin: 15px 0;
+    }
+
+    .section-3-desc p{
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .testimonial-section{
+        width: 90%;
+        min-height: 100vh;
+        margin: 100px auto 0;
+        flex-direction: column;
+    }
+
+    .testimonial-section::after{
+        top: -30px;
+        left: -10px;
+    }
+
+    .testimonial-card{
+        width: 350px;
+        height: 230px;
+        margin-bottom: 25px;
+    }
+
+    .testimonial-desc{
+        width: 310px;
+    }
+
+    .sign-up-section{
+        width: 90%;
+        height: 60vh;
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+
+    .sign-up-desc{
+        width: 300px;
+        margin: auto;
+    }
+    
+    .sign-up-desc h1{
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+
+    input[type="email"]{
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    input[type="submit"]{
+        width: 300px;
+    }
+
+    footer{
+        height: 120vh;
+    }
+
+    footer .logo{
+        width: 120px;
+        top: 80px;
+        left: 30px;
+    }
+
+    .footer-body{
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .location{
+        width: 300px;
+    }
+
+    .footer-body p{
+        font-size: 14px;
+        margin-bottom: 35px;
+        line-height: 1.2rem;
+    }
+
+    .about-us{
+        margin: 30px 0;
+    }
+
+    .social-links{
+        width: 35%;
+        margin: 15px auto 0;
+    }
+
+    .fab{
+        font-size: 10px;
+    }
+
+    .footer-bottom{
+        height: 8vh;
+        font-size: .875rem;
+    }
+
+    .footer-bottom p{
+        margin-top: 1em;
+    }
+}
+
+
+
+
