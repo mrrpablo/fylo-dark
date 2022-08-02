@@ -366,19 +366,19 @@ li a{
     margin-right: 15px;
 }
 
-.fab{
-    margin-right: 10px;
+.fa-brands{
+    margin-right: 6px;
     padding: 5px;
     border: 2px solid #fff;
     border-radius: 50%;
 }
 
-a.fab{
+a.fa-brands{
     text-decoration: none;
     color: #fff;
 }
 
-.fab:hover{
+.fa-brands:hover{
     color: hsl(176, 68%, 64%);
 }
 
